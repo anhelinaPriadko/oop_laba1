@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyExcelMAUIApp3"
+             x:Class="MyExcelMAUIApp3.MainPage"
+             BackgroundColor="#F0F0F0">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.ColumnSpan="2">
+            <Button Text="Зберегти" Clicked="SaveButton_Clicked" BackgroundColor="#66BB6A"/>
+            <Button Text="Відкрити" Clicked="OpenButton_Clicked" BackgroundColor="#66BB6A"/>
+            <Button Text="Порахувати" Clicked="CalculateButton_Clicked" BackgroundColor="#66BB6A"/>
+            <Button Text="Довідка" Clicked="HelpButton_Clicked" BackgroundColor="#66BB6A"/>
+            <Button Text="Вийти" Clicked="ExitButton_Clicked" BackgroundColor="#66BB6A"/>
+        </StackLayout>
+
+        <ScrollView Grid.Row="1">
+            <Grid x:Name="grid" RowSpacing="5"/>
+        </ScrollView>
+    </Grid>
+</ContentPage>
